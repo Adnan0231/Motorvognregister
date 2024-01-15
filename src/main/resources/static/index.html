@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
-$END$
+<form id="registrering" action="javascript:registerVehicle();">
+    <label for="pnummer">Personnummer</label>
+    <input id="pnummer" type="text">
+
+    <label for="navn">Navn</label>
+    <input id="navn" type="text">
+
+    <label for="adresse">Adresse</label>
+    <input id="adresse" type="text">
+
+    <label for="kjennetegn">Kjennetegn</label>
+    <input id="kjennetegn" type="text">
+
+    <label for="bilmerke">Bilmerke</label>
+    <input id="bilmerke" type="text">
+
+    <label for="biltype">Biltype</label>
+    <input id="biltype" type="text">
+
+    <button type="submit">Send inn</button>
+</form>
+
+<button onclick="getBiler()">Hent biler</button>
+
+<table id="outputTable">
+    <tr>
+        <th>Personnummer</th>
+        <th>Navn</th>
+        <th>Adresse</th>
+        <th>Kjennetegn</th>
+        <th>Bilmerke</th>
+        <th>Biltype</th>
+    </tr>
+</table>
+
+<script src="index.js"></script>
 </body>
 </html>
